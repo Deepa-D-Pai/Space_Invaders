@@ -8,12 +8,12 @@ screen=pygame.display.set_mode((800,600))
 #to change the caption of the window
 pygame.display.set_caption("Space_Invaders")
 #to change the icon of the window
-icon=pygame.image.load("C:\\Users\\deepapranav\\Downloads\\alien.png")
+icon=pygame.image.load("alien.png")
 pygame.display.set_icon(icon)
 #background image
-bg=pygame.image.load("C:\\Users\\deepapranav\\Desktop\\sky.jpg")
+bg=pygame.image.load("sky.jpg")
 #player(hero) image and co-ordinates
-playerImg=pygame.image.load("C:\\Users\\deepapranav\\Downloads\\spaceship.png")
+playerImg=pygame.image.load("spaceship.png")
 playerX=370
 playerY=480
 #for the movement of player left and right
