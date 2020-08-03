@@ -4,11 +4,11 @@ import math
 #initialize pygame to use it
 pygame.init()
 #create window with pygame.display.set_mode((widht,heigth))
-screen=pygame.display.set_mode((800,600))
+screen = pygame.display.set_mode((800,600))
 #to change the caption of the window
 pygame.display.set_caption("Space_Invaders")
 #to change the icon of the window
-icon=pygame.image.load("alien.png")
+icon =  pygame.image.load("alien.png")
 pygame.display.set_icon(icon)
 #background image
 bg=pygame.image.load("sky.jpg")
@@ -56,7 +56,7 @@ bullet_state="ready"
 # function to fire the bullet, call when space bar is hit
 def fire_bullet(x,y):
     global bullet_state
-    bullet_state="fire"
+    bullet_state = "fire"
     #these addition to co-orinates make firing lookfrom centre n top nose of spaceship
     screen.blit(bullet,(x+16,y+10))
 #collision of obejects
@@ -125,11 +125,11 @@ while running:
                 playerX_change=0
     playerX+=playerX_change
     #to avoid the Player go beyond the screen on left
-    if playerX<0:
-        playerX=0
+    if playerX < 0:
+        playerX = 0
     # on right as size of image is 64pix (800-64=736)    
-    elif playerX>=736:
-        playerX=736    
+    elif playerX >= 736:
+        playerX = 736    
     #enemy movement
     for i in range(num_of_enemies):
         # Game Over when any enemy reaches y=440
